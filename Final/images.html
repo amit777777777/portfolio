@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="imagestyles.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Amit's Story Sip </div>
+        <div> 
+            <ul class="nav-links">
+                <li> <a href="About.html"> About </a> </li>
+                <li> <a href="images.html"> Images </a> </li>
+                <li> <a href="blogs.html"> Blogs </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="web-nav">
+        <div class="logo"> Amit's Story Sip </div>
+        <div class="web-menu">
+            <div class="web-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="about.html"> Home </a> </li>
+                <li> <a href="images.html"> Images </a> </li>
+                <li> <a href="blogs.html"> Blogs </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+            </div>
+        </div>
+    </nav>
+    <h1 align="center">
+        <b><i> Images Section </i></b> 
+       </h1>
+       <p align="center">
+        <i> Mesmerizing moments of the Year </i> </p>
+    <div class="full-img" id="fullimgbox"> 
+        <img src="img1.png" id="fullimg">
+        <span onclick="closefullimg()"> X </span>
+    </div>
+    <div class="img-gallery">
+        <img src="img1.png" onclick="openfullimg(this.src)">
+        <img src="img2.png" onclick="openfullimg(this.src)">>
+        <img src="img3.png" onclick="openfullimg(this.src)">>
+        <img src="img4.png" onclick="openfullimg(this.src)">>
+        <img src="img5.png" onclick="openfullimg(this.src)">>
+        <img src="img6.png" onclick="openfullimg(this.src)">>
+        <img src="img7.png" onclick="openfullimg(this.src)">>
+        <img src="img8.png" onclick="openfullimg(this.src)">>
+    </div>
+<script>
+    var fullimgbox = document.getElementById("fullimgbox");
+    var fulimg = document.getElementById("fullimg");
+
+    function openfullimg(pic){
+        fullimgbox.style.display = "flex";
+        fullimg.src = pic;
+    }
+
+    function closefullimg(){
+        fullimgbox.style.display = "none";
+    }
+
+</script>
+</body>
+</html>
