@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Your Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form-validation.js" defer></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Amit's Story Sip </div>
+        <div> 
+            <ul class="nav-links">
+                <li> <a href="About.html"> About </a> </li>
+                <li> <a href="images.html"> Images </a> </li>
+                <li> <a href="blogs.html"> Blogs </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="web-nav">
+        <div class="logo"> Amit's Story Sip </div>
+        <div class="web-menu">
+            <div class="web-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="about.html"> Home </a> </li>
+                <li> <a href="images.html"> Images </a> </li>
+                <li> <a href="blogs.html"> Blogs </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+            </div>
+        </div>
+    </nav>
+        <small>Enter message (optional) and click button "Send"</small>
+        <div class="wrapper centered">
+          <article class="letter">
+            <div class="side">
+              <h1>Contact us</h1>
+              <p>
+                <textarea placeholder="Your message"></textarea>
+              </p>
+            </div>
+            <div class="side">
+              <p>
+                <input type="text" placeholder="Your name" >
+              </p>
+              <p>
+                <input type="email" placeholder="Your email" >
+              </p>
+              <p>
+                <button id="sendLetter">Send</button>
+              </p>
+            </div>
+          </article>
+          <div class="envelope front"></div>
+          <div class="envelope back"></div>
+        </div>
+        <p class="result-message centered">Thank you for your message</p>
+    </body>
+</html>
